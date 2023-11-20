@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Expenses chart component</title>
 
@@ -12,24 +16,61 @@
 
 <body>
 
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
+  <main>
+    <header class="header">
+      <div>
+        <p class="subtitle">My balance</p>
+        <p class="header__balance">$921.48</p>
+      </div>
+      <img src="./images/logo.svg" alt="logo">
+    </header>
+    <content>
+      <section class="chart">
+        <h1 class="chart__header">Spending - Last 7 days</h1>
+        <div class="chart__container">
+          <div>
+            <div class="chart__bar"></div>
+            <span class="chart__label">mon</span>
+          </div>
+          <div>
+            <div class="chart__bar"></div>
+            <span class="chart__label">tue</span>
+          </div>
+          <div>
+            <div class="chart__bar"></div>
+            <span class="chart__label">wed</span>
+          </div>
+          <div>
+            <div class="chart__bar"></div>
+            <span class="chart__label">thu</span>
+          </div>
+          <div>
+            <div class="chart__bar"></div>
+            <span class="chart__label">fri</span>
+          </div>
+          <div>
+            <div class="chart__bar"></div>
+            <span class="chart__label">sat</span>
+          </div>
+          <div>
+            <div class="chart__bar"></div>
+            <span class="chart__label">sun</span>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section class="expense">
+        <p class="subtitle">Total this month</p>
+        <div>
+          <p class="expense__amount">$478.33</p>
+        </div>
+        <div>
+          <p class="expense__increase">+2.4%</p>
+          <p class="subtitle">from last month</p>
+        </div>
+      </section>
+    </content>
+  </main>
 
 </body>
 

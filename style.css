@@ -4,4 +4,33 @@
   border: none;
   padding: 0;
   margin: 0;
+  font-family: "DM Sans", sans-serif;
+}
+
+.subtitle {
+  font-size: 0.9375rem;
+}
+
+.header__balance {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.chart__header {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.chart__label {
+  font-size: 0.75rem;
+}
+
+.expense__amount {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.expense__increase {
+  font-size: 0.9375rem;
+  font-weight: 700;
 }
