@@ -1,3 +1,12 @@
+:root {
+  --soft-red: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+  --dark-brown: hsl(25, 47%, 15%);
+  --medium-brown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --very-pale-orange: hsl(33, 100%, 98%);
+}
+
 * {
   box-sizing: border-box;
   outline: none;
@@ -7,8 +16,25 @@
   font-family: "DM Sans", sans-serif;
 }
 
+body {
+  background: var(--cream);
+}
+main {
+  background: var(--very-pale-orange);
+}
+
+hr {
+  border: solid 0.5px;
+  color: var(--cream);
+}
+
 .subtitle {
   font-size: 0.9375rem;
+}
+
+.header {
+  color: white;
+  background: var(--soft-red);
 }
 
 .header__balance {
@@ -16,17 +42,27 @@
   font-weight: 700;
 }
 
+.chart {
+}
+
 .chart__header {
   font-size: 1.5rem;
+  color: var(--dark-brown);
   font-weight: 700;
 }
 
 .chart__label {
   font-size: 0.75rem;
+  color: var(--medium-brown);
+}
+
+.expense .subtitle {
+  color: var(--medium-brown);
 }
 
 .expense__amount {
   font-size: 1.875rem;
+  color: var(--dark-brown);
   font-weight: 700;
 }
 
