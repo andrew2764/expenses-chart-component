@@ -16,58 +16,69 @@
 
 <body>
 
-  <header class="header">
-    <div>
-      <p class="subtitle">My balance</p>
-      <p class="header__balance">$921.48</p>
-    </div>
-    <img src="./images/logo.svg" alt="logo">
-  </header>
-  <main>
-    <section class="chart">
-      <h1 class="chart__header">Spending - Last 7 days</h1>
-      <div class="chart__container">
-        <div>
-          <div class="chart__bar"></div>
-          <span class="chart__label">mon</span>
-        </div>
-        <div>
-          <div class="chart__bar"></div>
-          <span class="chart__label">tue</span>
-        </div>
-        <div>
-          <div class="chart__bar"></div>
-          <span class="chart__label">wed</span>
-        </div>
-        <div>
-          <div class="chart__bar"></div>
-          <span class="chart__label">thu</span>
-        </div>
-        <div>
-          <div class="chart__bar"></div>
-          <span class="chart__label">fri</span>
-        </div>
-        <div>
-          <div class="chart__bar"></div>
-          <span class="chart__label">sat</span>
-        </div>
-        <div>
-          <div class="chart__bar"></div>
-          <span class="chart__label">sun</span>
-        </div>
-      </div>
-    </section>
-    <hr>
-    <section class="expense">
-      <p class="subtitle">Total this month</p>
+  <main class="container">
+    <header class="header">
       <div>
-        <p class="expense__amount">$478.33</p>
+        <p class="subtitle">My balance</p>
+        <p class="header__balance">$921.48</p>
       </div>
+      <img src="./images/logo.svg" alt="logo">
+    </header>
+    <div class="chart">
       <div>
-        <p class="expense__increase">+2.4%</p>
-        <p class="subtitle">from last month</p>
+        <h1 class="chart__header">Spending - Last 7 days</h1>
+        <div class="chart__container">
+          <div class="chart__col">
+            <div class="chart__daily-expense" id="mon">$52.36</div>
+            <div class="chart__bar"></div>
+            <span class="chart__label">mon</span>
+          </div>
+          <div class="chart__col">
+            <div class="chart__daily-expense" id="tue">$52.36</div>
+            <div class="chart__bar"></div>
+            <span class="chart__label">tue</span>
+          </div>
+          <div class="chart__col">
+            <div class="chart__daily-expense" id="wed">$52.36</div>
+            <div class="chart__bar"></div>
+            <span class="chart__label">wed</span>
+          </div>
+          <div class="chart__col">
+            <div class="chart__daily-expense" id="thu">$52.36</div>
+            <div class="chart__bar"></div>
+            <span class="chart__label">thu</span>
+          </div>
+          <div class="chart__col">
+            <div class="chart__daily-expense" id="fri">$52.36</div>
+            <div class="chart__bar"></div>
+            <span class="chart__label">fri</span>
+          </div>
+          <div class="chart__col">
+            <div class="chart__daily-expense" id="sat">$52.36</div>
+            <div class="chart__bar"></div>
+            <span class="chart__label">sat</span>
+          </div>
+          <div class="chart__col">
+            <div class="chart__daily-expense" id="sun">$52.36</div>
+            <div class="chart__bar"></div>
+            <span class="chart__label">sun</span>
+          </div>
+        </div>
       </div>
-    </section>
+      <hr>
+      <div class="expense">
+        <p class="subtitle">Total this month</p>
+        <div class="expense__row">
+          <div>
+            <p class="expense__amount">$478.33</p>
+          </div>
+          <div>
+            <p class="expense__increase">+2.4%</p>
+            <p class="subtitle">from last month</p>
+          </div>
+        </div>
+      </div>
+      </divc>
   </main>
 
 </body>
