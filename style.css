@@ -5,6 +5,7 @@
   --medium-brown: hsl(28, 10%, 53%);
   --cream: hsl(27, 66%, 92%);
   --very-pale-orange: hsl(33, 100%, 98%);
+  --card-white: hsl(33, 100%, 98%);
 }
 
 * {
@@ -88,7 +89,36 @@ hr {
   align-items: center;
 }
 
+.chart__bar::before,
+.chart__bar::after {
+  --scale: 0;
+
+  position: absolute;
+  top: -0.5rem;
+  transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+  left: 50%;
+}
+
+.chart__bar::before {
+  content: attr(data-tooltip);
+  color: var(--card-white);
+  background: var(--dark-brown);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+
+  transition: 150ms transform;
+  transform-origin: bottom center;
+}
+
+.chart__bar:hover::before,
+.chart__bar:hover::after {
+  --scale: 1;
+}
+
 .chart__bar {
+  position: relative;
   background: var(--soft-red);
   height: 100%;
   width: 100%;
@@ -99,7 +129,11 @@ hr {
 }
 
 .chart__bar:hover {
-  opacity: 0.5;
+  background: color-mix(
+    in hsl,
+    var(--soft-red) 50%,
+    var(--very-pale-orange) 50%
+  );
 }
 
 .chart__label {
