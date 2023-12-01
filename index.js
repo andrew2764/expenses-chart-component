@@ -17,7 +17,7 @@ async function main() {
     chart.dataset.tooltip = data[i].amount;
     chart.style.height = `${(+data[i].amount / highestValue) * 100}%`;
   });
-  charts[highestValueIndex].style.background = "hsl(186, 34%, 60%)";
+  charts[highestValueIndex].classList.add("chart__bar--accent");
 }
 
 main();

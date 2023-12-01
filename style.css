@@ -112,6 +112,18 @@ hr {
   transform-origin: bottom center;
 }
 
+.chart__bar:hover {
+  background: color-mix(in hsl, var(--soft-red) 60%, white 40%);
+}
+
+.chart__bar.chart__bar--accent {
+  background: var(--cyan);
+}
+
+.chart__bar.chart__bar--accent:hover {
+  background: color-mix(in hsl, var(--cyan) 60%, white 40%);
+}
+
 .chart__bar:hover::before,
 .chart__bar:hover::after {
   --scale: 1;
@@ -128,14 +140,6 @@ hr {
   cursor: pointer;
 
   transition: all 500ms;
-}
-
-.chart__bar:hover {
-  background: color-mix(
-    in hsl,
-    var(--soft-red) 50%,
-    var(--very-pale-orange) 50%
-  );
 }
 
 .chart__label {
