@@ -120,12 +120,14 @@ hr {
 .chart__bar {
   position: relative;
   background: var(--soft-red);
-  height: 100%;
+  height: 0;
   width: 100%;
   max-width: 3.1375rem;
   margin-bottom: 0.625em;
   border-radius: 0.125rem;
   cursor: pointer;
+
+  transition: all 500ms;
 }
 
 .chart__bar:hover {
