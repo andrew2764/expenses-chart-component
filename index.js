@@ -12,8 +12,6 @@ async function main() {
   const highestValueIndex = amounts.indexOf(highestValue);
 
   charts.forEach((chart, i) => {
-    console.log(highestValue, +data[i].amount);
-    console.log(`${+data[i].amount / highestValue}%`);
     chart.dataset.tooltip = data[i].amount;
     chart.style.height = `${(+data[i].amount / highestValue) * 100}%`;
   });
