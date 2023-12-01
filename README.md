@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/expenses-chart-component-AkKfY0bfXu
 - Live Site URL: https://andrew2764.github.io/expenses-chart-component/
 
 ## My process
@@ -48,7 +48,7 @@ Users should be able to:
 
 ### Useful resources
 
-- [How To Make Tooltips With Only CSS](https://www.youtube.com/watch?v=ujlpzTyJp-M) - This was my first time writing a tooltip from scratch. I followed this tutorial from Web Dev Simplified. It helped immensely and also helped me get more familiary with using CSS pseudo elements
+- [How To Make Tooltips With Only CSS](https://www.youtube.com/watch?v=ujlpzTyJp-M) - This was my first time writing a tooltip from scratch. I followed this tutorial from Web Dev Simplified. It helped immensely and also helped me get more familiar with using CSS pseudo elements
 
 - [CSS Grid Course](https://cssgrid.io/) - I used CSS grid to implement the layout of the bar charts. I initially was not familiar with it, so I went through this course by Wes Bos to get myself up to speed.
 
